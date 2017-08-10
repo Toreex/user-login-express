@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+
+      .col-md-12
+          h1 Welcome login user please --&gt;
+            |     
+            .modal-dialog
+              .modal-content
+                .panel-heading
+                  h3.panel-title Sign In
+                |                     
+                .panel-body
+                  form(action="/login", method="POST")
+                    fieldset
+                      .form-group
+                        input.form-control(placeholder='E-mail', name='email', type='email', autofocus='')
+                      |                                 
+                      .form-group
+                        input.form-control(placeholder='Password', name='password', type='password', value='')
+                      |                                                                
+                      |                                 
+                      a.btn.btn-sm.btn-success(href='javascript:;') Login
+          hr
