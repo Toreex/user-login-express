@@ -3,15 +3,15 @@ extends ../layout
 block content
 
       .col-md-12
-          h1 Welcome login user please --&gt;
+          h1 Register User !! --&gt;
             |     
             .modal-dialog
               .modal-content
                 .panel-heading
-                  h3.panel-title Sign In
+                  h3.panel-title Please Register user !
                 |                     
                 .panel-body
-                  form(action="/login", method="POST")
+                  form(action="/register", method="POST")                 
                     fieldset
                       .form-group
                         input.form-control(placeholder='E-mail', name='email', type='email', autofocus='')
@@ -19,7 +19,6 @@ block content
                       .form-group
                         input.form-control(placeholder='Password', name='password', type='password', value='')
                       |                                                                
-                      |                                 
-                      button.button-log.btn.btn-sm.btn-success Login
-                      a(href='/register').button-reg.btn.btn-sm.btn-success Register
+                      |                        
+                      button.button-reg.btn.btn-sm.btn-success Register
           
